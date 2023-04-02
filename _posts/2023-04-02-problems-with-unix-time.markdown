@@ -1,4 +1,9 @@
-Unix Time and the 2038 Problem
+---
+layout: post
+title:  "Unix Time and the 2038 Problem"
+date:   2023-04-02 15:55:42 -0400
+categories: Tech Rambles
+---
 
 Imagine: it's 1999 and you're working as a leader of a software engineering team responsible for testing the software at a large tech company, such as Microsoft. You've just been handed an assignment to analyze and mitigate the risks of the Y2K problem.
 
@@ -26,7 +31,7 @@ The answer is, yes, they very much do. Use of unix time is almost ubiquitous in 
 
 In fact, I encountered a real-life example which made me want to write this article in the first place. The following excerpt is taken from the open source MySQL code base:
 
-```
+{% highlight cpp %}
 if (tries > max_tries) {
   /*
     If the time has got past epoch, we need to shut this server down.
@@ -40,7 +45,7 @@ if (tries > max_tries) {
   error = true;
   kill_mysql();
 }
-```
+{% endhighlight %}
 
 In its current state, MySQL will not run after 2038. I suspect this is the case for many different pieces of software currently in existence.
 
