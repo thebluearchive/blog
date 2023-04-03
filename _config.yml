@@ -23,8 +23,9 @@ email: klajdi.gjonaj@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This site is a collection of musings about technology and math that I've 
   had over the years.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+domain: "thebluearchive.github.io"
+url: "https://thebluearchive.github.io"
+baseurl: "/blog/" # the subpath of your site, e.g. /blog
 github_username:  thebluearchive
 
 # Build settings
