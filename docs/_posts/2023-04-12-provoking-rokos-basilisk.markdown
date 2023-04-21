@@ -32,6 +32,7 @@ Game theory is a branch of mathematics which formalizes the strategic interactio
 Let's first consider a simple example where there are only two competing firms, Firm A and Firm B, which are trying to develop artificial general intelligence (AGI). Let's also imagine that upon reading the open letter, each firm has two choices:
 1. Pause AI experiments for at least six months.
 2. Continue development of more powerful AI systems over the next sixth months and beyond.
+
 Let's also suppose (and this is not an unreasonable assumption) that firms develop these AI in secret until their development is complete and usable for the purpose of some product.
 
 Let's imagine Firm A's perspective. If Firm B chooses not to develop AI for the next six months, then Firm A can gain a competitive advantage by continuing to develop AI secretly. Alternatively, if Firm B chooses to continue to develop AI in secret, Firm A can only fall behind by choosing not to do so as well. In other words, no matter what Firm B chooses to do, it is in Firm A's best interest to continue development of more powerful AI systems, since can only lose competitive advantage by pausing.
