@@ -24,7 +24,7 @@ The thought experiment has been compared to Pascal's wager, and many have critiz
 
 Whatever you might think regarding how reasonable it is that a hyperintelligent AI would behave in this way, one thing is clear: everyone who signed the open letter to Pause Giant AI Experiment has publicly provoked Roko's Basilisk, should it ever come to exist.
 
-## A Game-Theoretic Discussion Of The Pause
+## A Game-Theoretic Discussion of the Pause
 Another interesting thought that came to mind when I learned about Roko's Basilisk was a new way to frame the response (or lackthereof) of large AI tech companies to the open letter -- in particular, understanding the response by using game theory.
 
 Game theory is a branch of mathematics which formalizes the strategic interactions between rational agnets. Game theory can be used to study what the optimal choice is in a given situation. Economists often use game theory to model real-world interactions between firms. We can do the same here.
@@ -43,7 +43,7 @@ The problem is that by pursuing their own interests, these firms are barrelling 
 2. Lack of cooperation. Each firm has only its own best interest in mind; typically, its goal is to maximize its own profit as well as the profit of its shareholders. Because of this lack of cooperation and coordination between firms, it is unlikely that safety will be prioritized in place of speed.
 
 ## Is there hope?
-Despite everything I've written above, I'm optimistic about the future. I don't think it will be easy, but I believe that we can figure out the right set of actions to take. There are plans we can, as a society, put into action in order to ensure that 
+Despite everything I've written above, I'm optimistic about the future. I don't think it will be easy, but I believe that we can figure out the right set of actions to take. There are plans we can, as a society, put into action in order to ensure that the development of future models is carried out in a safe manner.
 
 In fact, the Future of Life Institute published [a set of policy recommendations](https://futureoflife.org/wp-content/uploads/2023/04/FLI_Policymaking_In_The_Pause.pdf) shortly after publishing their open letter. Among the recommendations are guidelines for how to prevent dangerous AI systems from being developed. These include
 - Regulating large amounts of computational power
