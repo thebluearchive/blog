@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "Link Rot"
+date:   2023-04-20 20:00:00 -0400
+categories: Tech Rambles
+---
+
+In my previous place of employment, I wrote a lot of Visual Basic .NET code (VB from here on out). VB is an old programming language. So old, that if you start a Google search with the words "Visual Basic .NET" the first auto-complete suggestion is "Visual Basic .NET end of life". And indeed, [Microsoft has announced](https://devblogs.microsoft.com/vbteam/visual-basic-support-planned-for-net-5-0/) as early as 2020 has stated that they "do not plan to evolve Visual Basic as a language."
+
+Needless to say, the language is old, but still in use in many legacy code bases which exist throughout the world. As a result, I'd often go scouring the web for ancient documentation on libraries which were no longer supported, stack overflow, and if I got particularly unlucky, sketchy looking forums from the early 2000s. I can't count how many times, while on one of those old forums, I saw a post like
+
+> I found the solution to my issue! Details can be found at this-site-no-longer-exists.com!
+
+This is link rot, also known as link death or reference rot. It is the process by which hyperlinks become unavailable or inaccessible over time. You have likely experienced it yourself. This can happen when the content linked to has been moved, deleted, or altered, rendering the original URL invalid. As a result, any unfortunate soul who stumbles upon these links are greeted only with 404 error messages - the Internet equivalent of a dead end.
+
+## Why Does Link Rot Occur?
+Link rot can occur for a number of reasons, and these include:
+1. Website restructuring. If a website changes its page structure, the owners of that website might be careful to repoint any URLs to account for this change. However, any other websites which pointed to the site before the restructure are likely to have invalid URLs that no longer point to any real content.
+2. Domain expiration. If a website owner does not renew their domain registration, the domain may be removed, and the site may be taken down.
+3. Content removal. Sometimes, sites (especially sites that host user content) remove content which might be aganist their policies. Some content gets removed for copyright issues or other legal disputes.
+4. Webpage archiving. Some websites, notably news sites or blogs, tend to archive old pages every few years. When this happens, if the site owners aren't careful, it's likely that the original URLs will become inaccessible.
+
+Because the internet is constantly changing, it is only a matter of time before many links which are still valid right now break. As these hyperlinks age, they become more and more brittle; the probability that a 20 year old hyperlink works is a lot lower than a one day old hyperlink.
+
+Is link rot becoming a bigger issue? It's hard to measure for sure, but it seems like modern sites are sometimes making it more likely for link rot to occur. Take, as an extreme example, Tik Tok. I'm not a user of the site myself, but I have friends who will sometimes send me humorous clips they found on Tik Tok. Sometimes, a day or two will go by and the link will already be invalid. The content has already been altered or removed. Modern social media platforms seem to be particularly susceptible to what I would call _accelerated link rot_.
+
+## Is this a real issue?
+It might be frustrating to not be able to access a piece of old documentation or no longer have access to that meme your friend sent you, but how much of a problem is this really? It turns out, the internet is littered with hyperlinks which no longer point anywhere valid.
+
+[A study conducted by Harvard Law School](https://harvardlawreview.org/forum/vol-127/perma-scoping-and-addressing-the-problem-of-link-and-reference-rot-in-legal-citations/) found that "50% of the URLs within U.S. Supreme Court opinions suffer reference rot". This is real, serious information that is now lost. The study goes into great detail regarding the methodology and data gathered, so I would recommend reading the full article for those that are curious (if the link provided still works!).
+
+## Prevention
+Despite the prevalence of link rot today, there are steps that can be taken by site owners to improve the situation. Many of these strategies were outlined by Tim Berners Lee in a W3C article titled [Cool URIs don't change](https://www.w3.org/Provider/Style/URI). The W3C (World Wide Web Consortium) is an international organization which sets standards for the internet. In this article are strategies for preventing link rot.
+Most of the recommendations are about designing good URIs. This involves leaving out information that is subject to change, strategies for deciding what URI to use for a particular page, and more.
+
+Beyond that, site owners can also prevent links on their site from going stale through periodic link maintenance. Website owners can check for broken links and either update or remove them as needed. It's up to us to own the technology and create a better web.
+
