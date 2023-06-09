@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "The Lynx Browser"
+date:   2023-06-09 18:00:00 -0400
+categories: Tech Rambles
+---
+
+Lately, I've rediscovered the joy of CLI applications. A CLI, or command line interface is a program which runs in the terminal. For those that are unfamiliar, the terminal is an application which allows you to interact with the computer through text input and output.
+
+CLI programs are programs built to run in this environment. Typically, the only input they accept are those from a keyboard (although some newer CLI applications can also accept mouse inputs) and they only output unicode text! I've used CLI applications for a long time, but lately I've been rediscovering the magic of the simplicity behind these programs.
+
+My latest discovery is the Lynx web browser.
+
+## Lynx
+Do you ever feel that the modern web is too bloated? Perhaps you've been on one too many sites that took ages to load because of a javascript framework running in the background, images taking up most of the bandwidth, or ads which automatically play as soon as the page loads.
+
+Or perhaps you feel that the modern web is a bit too distracting at times. If you're like me, then you may find yourself going on wild tangents when at first you were just looking for a single piece of information.
+
+Or perhaps you just want to reminisce about the early days of the internet, and what it must have been like to interact with websites in a more limited fashion.
+
+If you agree with any of these, then I encourage you try Lynx! [Lynx](https://en.wikipedia.org/wiki/Lynx_(web_browser)) is a web browser that runs directly from the command line. It is also one of the oldest web browsers which is still actively maintained, with its first release dating all the way back to 1992.
+
+Installing Lynx on a Linux system is usually as simple as getting it from your package manager. For me, I simply had to run
+
+```
+sudo apt-get install lynx
+```
+and I was ready to start browsing.
+
+<figure>
+  <img src="/blog/images/example.png" alt="Browsing the Lynx Wikipedia page with Lynx"/>
+  <figcaption>Browsing the Lynx Wikipedia page with Lynx</figcaption>
+</figure>
+
+Lynx supports a simple navigation system using the arrow keys. There is also a built-in search functionality which allows you to search for text anywhere on the webpage by simply typing a forward-slash, followed by the text you want to search for.
+
+You can navigate with Lynx much like you do on any other web browser, either by visiting a site directly through its URL or by clicking on links to move between pages.
+
+While using the Lynx, I discovered another neat feature: the browser history. Every browser has an implementation of browser history in one form or another, but what I find amazing about Lynx is the speed. Any page you've visited in this session seems to be held in memory, so visiting a page you've already been on has almost no loading time at all!
+
+Despite caching all of this information, Lynx still maintains a tiny memory footprint thanks to it only displaying text. I've never seen it go above 30MB of RAM and it didn't even make a blip of CPU usage on my machine.
+
+# Recommendations and Configuration
+If you would like to try this for yourself, there are a few things I recommend.
+
+First, I wouldn't recommend trying to use this browser on any site which makes extensive use of javascript. It should go without saying, but you aren't going to be able to watch youtube videos on this, or browse through social media. Really, you won't be able to view any type of image. I think that's part of the distraction-free charm of Lynx.
+
+Second, I would recommend turning off the cookie notifications. Each time you visit a new site, you will likely be prompted to accept or deny the cookies, and that can get pretty annoying (just as it does in any other browser). Fortunately in Lynx, you can disable that altogether! You can choose to accept all cookies, but I prefer to block all cookies in Lynx. To do so, you can simply edit the Lynx configuration file.
+
+I found the location of this file by running
+```
+whereis lynx
+```
+in my terminal. Afterwards, I was able to edit my configuration file located in `/etc/lynx/lynx.cfg`, which is where it is located after a standard install. By setting
+
+```
+SET_COOKIES:FALSE
+```
+I stopped getting those pesky cookies notifications altogether.
+
+Is Lynx going to be my daily-driver web browser? Probably not. Is it a useful tool? Certainly! I find it most useful when reading documentation and when I need to stay focused. In these cases, it has all the benefits of the modern web without any of the distractions.
+
+There is so much more to talk about with Lynx, and I'm sure I'll learn more as I continue to use it. That will have to be saved for a future article, however.
