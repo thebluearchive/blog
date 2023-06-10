@@ -11,7 +11,7 @@ CLI programs are programs built to run in this environment. Typically, the only 
 
 My latest discovery is the Lynx web browser.
 
-## Lynx
+# Lynx
 Do you ever feel that the modern web is too bloated? Perhaps you've been on one too many sites that took ages to load because of a javascript framework running in the background, images taking up most of the bandwidth, or ads which automatically play as soon as the page loads.
 
 Or perhaps you feel that the modern web is a bit too distracting at times. If you're like me, then you may find yourself going on wild tangents when at first you were just looking for a single piece of information.
@@ -25,7 +25,7 @@ Installing Lynx on a Linux system is usually as simple as getting it from your p
 ```
 sudo apt-get install lynx
 ```
-and I was ready to start browsing.
+in my terminal and I was ready to start browsing.
 
 <figure>
   <img src="/blog/images/example.png" alt="Browsing the Lynx Wikipedia page with Lynx"/>
@@ -51,13 +51,14 @@ I found the location of this file by running
 ```
 whereis lynx
 ```
-in my terminal. Afterwards, I was able to edit my configuration file located in `/etc/lynx/lynx.cfg`, which is where it is located after a standard install. By setting
+in my terminal. Afterwards, I was able to edit my configuration file located in `/etc/lynx/lynx.cfg`, which is where it is typically located after a standard install. By setting
 
 ```
 SET_COOKIES:FALSE
 ```
 I stopped getting those pesky cookies notifications altogether.
 
+# Final Thoughts
 Is Lynx going to be my daily-driver web browser? Probably not. Is it a useful tool? Certainly! I find it most useful when reading documentation and when I need to stay focused. In these cases, it has all the benefits of the modern web without any of the distractions.
 
 There is so much more to talk about with Lynx, and I'm sure I'll learn more as I continue to use it. That will have to be saved for a future article, however.
