@@ -1,0 +1,58 @@
+---
+layout: post
+title:  "I read Stephen Wolfram's \"A New Kind Of Science\" so you don't have to"
+date:   2023-09-17 18:00:00 -0400
+categories: Tech Rambles
+---
+
+# Introduction
+
+Stephen Wolfram's _A New Kind Of Science_ (NKS) is a controversial book which discusses cellular automata, computability, and applications of computability to modeling the real world.
+
+<figure style="float:right">
+  <img src="/blog/images/a_new_kind_of_science.png" alt="A New Kind Of Science"/>
+  <figcaption>The cover of <em>A New Kind Of Science</em></figcaption>
+</figure>
+
+Before discussing the book itself, it might be of benefit to give a bit of background information on Stephen Wolfram himself. Stephen Wolfram is a British-American mathematician, computer scientist, physicist, and businessman. He is the founder and CEO of Wolfram Research, which I became familiar with during my undergraduate studies through the software known as Mathematica.
+
+Mathematica is a programming language created for the purpose of mathematical modeling. It has state-of-the-art modeling software capable of solving complex systems of equations, approximating solutions to partial differential equations, plotting and graphing in 2D and 3D, and much, much more.
+
+At the time of writing this, Wolfram has been making meaningful contributions to the field of computational mathematics for at least 45 years. It is needless to say that if anyone were qualified to speak on the topic of mathematical modeling, Wolfram would be on the top of the list. So why do I refer to this book as controversial?
+
+
+# A New Kind Of Science: Bold Claims
+
+_A New Kind Of Science_ is the culmination of over 20 years of his own research that Wolfram compiled into a 1197-page book. It is _long_ to say the least, but seemingly needlessly so. In fact, the book is written unlike any other mathematical text I have read before. Although a certain amount of prose is beneficial in explaining the thought process behind research, NKS relies heavily on prose.
+
+This is my main criticism of NKS - that many of the definitions in the book are not mathematical. Definitions are often only stated implicitly in words and are imprecise.
+
+Even the title of the book is hyperbolic, implying that Wolfram has single-handedly invented a new form of science which did not previously exist. I would have liked for this to have been the case, but unlike other sciences, Wolfram's fails to deliver meaningful predictions. Many of the observations made in Wolfram's experiments are qualitative rather than quantitative, so it is hard to generalize his experiments and use the lessons to model real physical systems. One fact that Wolfram seems to ignore throughout the book is that often times, numerical details are quite important - and yet it is unclear how to incorporate these details with Wolfram's framework.
+
+Furthermore, to imply that this is a new kind of science would mean that the experiments and observations describe by Wolfram should, in some sense, be original. And yet, the field of computability theory has now existed for something like one hundred years, and cellular automata have been formally studied in mathematics for at least half a century.
+
+Although Wolfram did a lot of work to compile this collection of experiments on cellular automata, calling this book _A New Kind of Science_ is in some ways discrediting the work of those who came before.
+
+# Redeeming Qualities
+
+I don't want this entire article to be discrediting NKS. In many ways, I think the message behind NKS is an interesting one, just not delivered in the best of ways. 
+
+Where NKS really excels is in the graphical representation of ideas. Wolfram is very talented with visualizing complex ideas, which is likely one of the reasons why Mathematica is so successful.
+
+So to end this article, I'll share some of the delightful graphics included in his book.
+
+<figure>
+  <img src="/blog/images/nks_code1635.png" alt="A New Kind Of Science"/>
+  <figcaption>The code 1635 cellular automata</figcaption>
+</figure>
+
+
+<figure>
+  <img src="/blog/images/nks-spherical-automaton.png" alt="A New Kind Of Science"/>
+</figure>
+
+<figure>
+  <img src="/blog/images/crystal-growth-automata.png" alt="A New Kind Of Science"/>
+</figure>
+
+For those interested in checking out the book for themselves, Stephen Wolfram has generously made the full text available online at [A New Kind Of Science](https://www.wolframscience.com/nks/).
