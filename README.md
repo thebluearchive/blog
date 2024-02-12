@@ -6,3 +6,5 @@ To build it yourself, first clone the repository. Then, run the following comman
 cd docs
 bundle exec jekyll serve
 ```
+
+If you need to install jekyll, you can do so by following the instructions at https://jekyllrb.com/docs/installation/.
