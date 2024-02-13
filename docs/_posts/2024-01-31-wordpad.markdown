@@ -1,0 +1,43 @@
+---
+layout: post
+title:  "The Life And Death Of Wordpad"
+date:   2024-01-31 16:00:00 -0400
+categories: Tech Rambles
+---
+
+## A brief introduction
+
+Wordpad is a rich text editor that used to come pre-installed with the Windows operating system, since Windows 95. With it, users could edit plain text, word documents, and many other file formats. Although it wasn't as fully featured as something like Microsoft Word when it comes to editing word documents, it still allowed users to perform basic necessary editing. What's more, it was entirely free.
+
+<figure>
+  <img src="/blog/images/wordpad-xp.jpg" alt="Wordpad in use within Windows XP."/>
+  <figcaption>Wordpad in use within Windows XP.</figcaption>
+</figure>
+
+Now, after 28 years, Microsoft has decided to deprecate this program. Microsoft has stated that they would no longer be maintaining Wordpad, and in the latest build of Windows 11, wordpad is not included.
+
+## Why now?
+Microsoft has not provided an answer for why they decided to make this decision now. Their [official post on the list of deprecated features](https://learn.microsoft.com/en-us/windows/whats-new/deprecated-features) for Windows gives some hint, however.
+
+> WordPad is no longer being updated and will be removed in a future release of Windows. We recommend Microsoft Word for rich text documents like .doc and .rtf and Windows Notepad for plain text documents like .txt.
+
+A reasonable conclusion is that, with Microsoft (and most of big tech) moving toward subscription models, they wanted to make it harder for users to edit .doc files without paying for a subscription to Microsoft Word.
+
+## How hard is it to maintain Wordpad?
+It's impossible to answer for sure, since the source code for Wordpad is proprietary and only known internally to Microsoft.
+
+As a software developer who has maintained some legacy code, I feel I can make an educated guess. I don't believe it would be difficult or require a lot of time or resources to continue to maintain Wordpad. It is a feature complete text editor that wasn't seeing lots of updates anyway. Because of its long life, it has likely reached a high level of stability. It isn't as complicated of a program as Microsoft Word and doesn't have as many features. Microsoft could probably leave the code as-is for a very long time without having to modify anything, and Wordpad would continue working the same way it has for the last 28 years.
+
+## Why is it so freaking hard to read a word document anyway?
+Let me introduce you to ECMA-376. [ECMA-376](https://ecma-international.org/publications-and-standards/standards/ecma-376/), also known as the Office Open XML file formats, contains the specification for word document file format. You might be thinking, as I was when I discovered this specification, "Wow that's convenient! Surely it can't be too hard to use the specification to create your own implementation of a program which can process these files."
+
+That was until I downloaded the specification and realized that it was over 5000 pages long. That is not an exageration. 5000. pages. Not only would you have to painstakingly read and understand this specification, but you would need to implement it as well.
+
+And that's not all! Microsoft has their own implementation of this spec, with it's own quirks. Thankfully, they've published a document containing the quirks and details of their implementation. Only problem is that this document is over a thousand pages.
+
+Microsoft also reserves the right to update this doucment with little prior notice. The latest format was [posted in 2022](https://learn.microsoft.com/en-us/openspecs/office_standards/ms-oe376/db9b9b72-b10b-4e7e-844c-09f88c972219). The most amusing part of this site is near the bottom, in the legal section:
+
+> The Open Specifications documentation does not require the use of Microsoft programming tools or programming environments in order for you to develop an implementation. If you have access to Microsoft programming tools and environments, you are free to take advantage of them.
+
+It's almost as if the legal team is wishing any implementers "good luck, you'll need it."
+
